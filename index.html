@@ -6,79 +6,81 @@
     <title>Calendario Interativo</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
 </head>
-
 <body>
     <h1>Calendario Interativo</h1>
 
-    <h1>Abril</h1>
+    <h1>Abril - 2025</h1>
 
     <table class="calendar" id="calendar">
         <tr>
-            <td>DOM</td>
-            <td>SEG</td>
-            <td>TER</td>
-            <td>QUA</td>
-            <td>QUI</td>
-            <td>SEX</td>
-            <td>SAB</td>
+            <th>DOM</th>
+            <th>SEG</th>
+            <th>TER</th>
+            <th>QUA</th>
+            <th>QUI</th>
+            <th>SEX</th>
+            <th>SAB</th>
         </tr>
         <tr>
-            <th></th>
-            <th></th>
-            <th>1</th>
-            <th>2</th>
-            <th>2</th>
-            <th>4</th>
-            <th>5</th>
+            <td></td>
+            <td></td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
         </tr>
         <tr>
-            <th>6</th>
-            <th>7</th>
-            <th>8</th>
-            <th>9</th>
-            <th>10</th>
-            <th>11</th>
-            <th>12</th>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
         </tr>
         <tr>
-            <th>13</th>
-            <th>14</th>
-            <th>15</th>
-            <th>16</th>
-            <th>17</th>
-            <th>18</th>
-            <th>19</th>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
         </tr>
         <tr>
-            <th>20</th>
-            <th>21</th>
-            <th>22</th>
-            <th>23</th>
-            <th>24</th>
-            <th>25</th>
-            <th>26</th>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
         </tr>
         <tr>
-            <th>27</th>
-            <th>28</th>
-            <th>29</th>
-            <th>30</th>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
     </table>
     <hr/>
-
-    <label for="">Escolha uma cor</label>
+    <label for="">Escolha uma cor:</label>
     <select id="color">
-        <option value="LigthBlue">Azul</option>
+        <option value="LightBlue">Azul</option>
         <option value="PaleGreen">Verde</option>
-        <option value="LigthPink">Rosa</option>
+        <option value="LightPink">Pink</option>
         <option value="SlateBlue">Roxo</option>
     </select>
-
-    <label id="Day">Escolha um dia:</label>
-    <input type="number" min="1" max="30">
-    <input type="submit" value="Enviar">
-    <script src='main.js'></script>   
+    <label>Escolha um dia:</label>
+    <input type="number" min="1" max="30" id="day">
+    <input type="submit" onclick="colorirDia()">
+        
+    <script src="main.js"></script>
 </body>
 </html>
